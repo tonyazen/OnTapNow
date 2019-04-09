@@ -1,0 +1,15 @@
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\OnTapNow.Services.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\OnTapNow.Services.pdb
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\log4net.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\Newtonsoft.Json.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\OnTapNow.Business.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\OnTapNow.Business.pdb
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\log4net.xml
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\Newtonsoft.Json.pdb
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\Newtonsoft.Json.xml
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\obj\Debug\OnTapNow.Services.csprojAssemblyReference.cache
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\obj\Debug\OnTapNow.Services.csproj.CoreCompileInputs.cache
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\obj\Debug\OnTapNow.Services.csproj.CopyComplete
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\obj\Debug\OnTapNow.Services.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\obj\Debug\OnTapNow.Services.pdb
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Services\bin\Debug\OnTapNow.Services.dll.config

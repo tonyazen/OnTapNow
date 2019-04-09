@@ -1,0 +1,19 @@
+﻿@model OnTapNow.Website.Models.BreweryViewModel
+
+@{
+	ViewBag.Title = "Brewery";
+}
+
+<h2>@Model.Brewery.Name</h2>
+
+@if (Model.ShowAddress)
+{
+	@Model.Brewery.Address.Street1<br/>
+	if (!string.IsNullOrEmpty(Model.Brewery.Address.Street2))
+	{
+		@Model.Brewery.Address.Street2<br/>
+	}
+	@Model.Brewery.Address.City<span>, </span>
+	@Model.Brewery.Address.StateCode
+	@Model.Brewery.Address.ZipCode
+}

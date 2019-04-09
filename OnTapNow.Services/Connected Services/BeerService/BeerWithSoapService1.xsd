@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:55860/HostDevServer/BeerWithSoapService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/BeerWithSoapService" />
+  <xs:complexType name="GetAllBeersRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAllBeersRequest" nillable="true" type="tns:GetAllBeersRequest" />
+  <xs:complexType name="BaseRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APIKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+  <xs:complexType name="GetAllBeersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BeerWithSoapService" minOccurs="0" name="Beers" nillable="true" type="q1:ArrayOfBeer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAllBeersResponse" nillable="true" type="tns:GetAllBeersResponse" />
+  <xs:complexType name="BaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequestTimeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ResponseStatus" type="tns:ResponseStatus" />
+      <xs:element minOccurs="0" name="TechnicalErrorMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+  <xs:simpleType name="ResponseStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResponseStatus" nillable="true" type="tns:ResponseStatus" />
+  <xs:complexType name="GetBeerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetBeerRequest" nillable="true" type="tns:GetBeerRequest" />
+  <xs:complexType name="GetBeerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BeerWithSoapService" minOccurs="0" name="Beer" nillable="true" type="q2:Beer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetBeerResponse" nillable="true" type="tns:GetBeerResponse" />
+  <xs:complexType name="AddBeerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BeerWithSoapService" minOccurs="0" name="Beer" nillable="true" type="q3:AddBeer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddBeerRequest" nillable="true" type="tns:AddBeerRequest" />
+  <xs:complexType name="AddBeerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BeerWithSoapService" minOccurs="0" name="Beer" nillable="true" type="q4:Beer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddBeerResponse" nillable="true" type="tns:AddBeerResponse" />
+  <xs:complexType name="UpdateBeerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BeerWithSoapService" minOccurs="0" name="Beer" nillable="true" type="q5:Beer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateBeerRequest" nillable="true" type="tns:UpdateBeerRequest" />
+  <xs:complexType name="UpdateBeerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BeerWithSoapService" minOccurs="0" name="Beer" nillable="true" type="q6:Beer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateBeerResponse" nillable="true" type="tns:UpdateBeerResponse" />
+  <xs:complexType name="DeleteBeerRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeleteBeerRequest" nillable="true" type="tns:DeleteBeerRequest" />
+  <xs:complexType name="DeleteBeerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeleteBeerResponse" nillable="true" type="tns:DeleteBeerResponse" />
+</xs:schema>

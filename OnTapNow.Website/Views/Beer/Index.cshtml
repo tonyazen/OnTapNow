@@ -1,0 +1,16 @@
+﻿@model OnTapNow.Website.Models.BeersViewModel
+
+@{
+	ViewBag.Title = "Beers";
+}
+
+<h2>Beers</h2>
+
+@foreach (var beer in Model.Beers)
+{
+	<h4>@Html.ActionLink(beer.Name, "Beer", new { id = beer.Id }, null)</h4>
+	@Html.ActionLink(beer.Brewery.Name, "GetBrewery", "Brewery", new { name = beer.Brewery.Name }, null)<br />
+	@beer.Style<br />
+	@beer.Abv
+	<hr />
+}

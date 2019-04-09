@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:55860/HostDevServer/BeerWithSoapService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" />
+  <xs:element name="GetAllBeers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="getAllBeersRequest" nillable="true" type="q1:GetAllBeersRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllBeersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="GetAllBeersResult" nillable="true" type="q2:GetAllBeersResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBeer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="getBeerRequest" nillable="true" type="q3:GetBeerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBeerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="GetBeerResult" nillable="true" type="q4:GetBeerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBeer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="beerRequest" nillable="true" type="q5:AddBeerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBeerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="AddBeerResult" nillable="true" type="q6:AddBeerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBeer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="updateBeerRequest" nillable="true" type="q7:UpdateBeerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBeerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="UpdateBeerResult" nillable="true" type="q8:UpdateBeerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBeer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="deleteBeerRequest" nillable="true" type="q9:DeleteBeerRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBeerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BeerWithSoapService.Models.ServiceModels" minOccurs="0" name="DeleteBeerResult" nillable="true" type="q10:DeleteBeerResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

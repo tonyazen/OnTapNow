@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BeerWithSoapService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BeerWithSoapService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfBeer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Beer" nillable="true" type="tns:Beer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBeer" nillable="true" type="tns:ArrayOfBeer" />
+  <xs:complexType name="Beer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Brewery" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Style" type="tns:Style" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Beer" nillable="true" type="tns:Beer" />
+  <xs:simpleType name="Style">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ale" />
+      <xs:enumeration value="Lager" />
+      <xs:enumeration value="Stout" />
+      <xs:enumeration value="IPA" />
+      <xs:enumeration value="PaleAle" />
+      <xs:enumeration value="Pilsner" />
+      <xs:enumeration value="Wheat" />
+      <xs:enumeration value="BrownAle" />
+      <xs:enumeration value="Bitter" />
+      <xs:enumeration value="Boch" />
+      <xs:enumeration value="BarleyWine" />
+      <xs:enumeration value="Porter" />
+      <xs:enumeration value="Saison" />
+      <xs:enumeration value="Lambic" />
+      <xs:enumeration value="Kolsch" />
+      <xs:enumeration value="Dunkel" />
+      <xs:enumeration value="CreamAle" />
+      <xs:enumeration value="Tripel" />
+      <xs:enumeration value="Dubbel" />
+      <xs:enumeration value="Gose" />
+      <xs:enumeration value="AmericanPaleAle" />
+      <xs:enumeration value="ScotchAle" />
+      <xs:enumeration value="Rye" />
+      <xs:enumeration value="Other" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Style" nillable="true" type="tns:Style" />
+  <xs:complexType name="AddBeer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Brewery" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Style" type="tns:Style" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddBeer" nillable="true" type="tns:AddBeer" />
+</xs:schema>

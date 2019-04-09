@@ -1,0 +1,11 @@
+﻿@model OnTapNow.Website.Models.BeerViewModel
+
+@{
+	ViewBag.Title = "Beer";
+}
+
+<h2>@Model.Beer.Name</h2>
+
+@Html.ActionLink(Model.Beer.Brewery.Name, "GetBrewery", "Brewery", new { name = Model.Beer.Brewery.Name }, null)<br />
+@Model.Beer.Style<br />
+@Model.Beer.Abv<br />

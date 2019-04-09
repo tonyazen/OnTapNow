@@ -1,0 +1,5 @@
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Business\bin\Debug\OnTapNow.Business.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Business\bin\Debug\OnTapNow.Business.pdb
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Business\obj\Debug\OnTapNow.Business.csproj.CoreCompileInputs.cache
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Business\obj\Debug\OnTapNow.Business.dll
+C:\misc\me\tonyazen\Conferences\Demo\OnTapNow\OnTapNow.Business\obj\Debug\OnTapNow.Business.pdb

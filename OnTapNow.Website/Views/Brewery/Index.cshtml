@@ -1,0 +1,20 @@
+﻿@model OnTapNow.Website.Models.BreweriesViewModel
+
+@{
+	ViewBag.Title = "Breweries";
+}
+
+<h2>Breweries</h2>
+
+@foreach (var brewery in Model.Breweries)
+{
+	<h4>@Html.ActionLink(brewery.Name, "Brewery", "Brewery", new { id = brewery.Id }, null)</h4>
+	@brewery.Address.Street1<br />
+	if (!string.IsNullOrEmpty(brewery.Address.Street2))
+	{
+		@brewery.Address.Street2<br/>
+	}
+	@brewery.Address.City<span>, </span>@brewery.Address.StateCode @brewery.Address.ZipCode<br />
+	<hr />
+}
+
